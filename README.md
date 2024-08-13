@@ -42,7 +42,7 @@ This section is dedicated to Yocto and OpenEmbedded, covering exercises such as:
 1. Clone the Repository: Start by cloning the repository to your local machine.
   
 bash
-   git clone https://github.com/your-username/embedded-linux-project.git
+   git clone https://github.com/xmersad/embedded-linux-project.git
    
 
 2. Explore the Sections: Navigate through the sections that interest you. Each section contains detailed instructions and exercises.
