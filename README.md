@@ -1,6 +1,5 @@
 # Embedded Linux Practices
 
----
 
 Welcome to the Embedded Linux Project repository! This repository is focused on providing hands-on exercises to help you practice and enhance your skills in Embedded Linux development. The exercises are categorized into different sections, each targeting a specific area of Embedded Linux systems.
 
@@ -61,4 +60,4 @@ Contributions to this repository are welcome! If you have suggestions for new ex
 
 This repository is licensed under the MIT License. Please see the [LICENSE](LICENSE) file for more information.
 
----
+
