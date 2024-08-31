@@ -4,15 +4,6 @@ Welcome to the `nInvaders-mpu6050` project! This project will guide you through 
 
 **Difficulty Level**: Intermediate
 
-## Exercise Structure
-
-Each exercise is designed to be practical and hands-on, with clear steps to follow. Exercises are structured as follows:
-
-1. **Introduction**: A brief overview of the exercise topic and its significance in system integration.
-2. **Prerequisites**: A list of required tools, software, and knowledge needed before starting the exercise.
-3. **Steps**: Detailed instructions on how to complete the exercise, with explanations to ensure you understand what you're doing and why.
-4. **Expected Outcome**: A description of the expected result or output after completing the exercise.
-5. **Further Exploration**: Suggestions for additional tasks or modifications to deepen your understanding of the topic.
 
 ## 1. Introduction
 
