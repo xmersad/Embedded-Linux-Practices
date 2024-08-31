@@ -5,7 +5,7 @@ Welcome to the Embedded Linux Project repository! This repository is focused on 
 
 ## Repository Structure
 
-The repository is organized into three main sections:
+The repository is organized into two main sections:
 
 ### 1. Embedded Linux from Scratch
 This section covers the foundational aspects of building an Embedded Linux system, including:
@@ -21,12 +21,6 @@ This section focuses on integrating and compiling software for Embedded Linux sy
 - Build Tools (Make, CMake, Meson)
 - Embedded Linux Stacks
 
-### 3. Yocto Project / OpenEmbedded
-This section is dedicated to Yocto and OpenEmbedded, covering exercises such as:
-- Writing Recipes
-- Creating Layers
-- Building Images for Different Architectures
-- Exploring Yocto Concepts
 
 ## How to Navigate the Repository
 
