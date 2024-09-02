@@ -100,7 +100,8 @@ By the end of this exercise, you should have:
 
 Below is an example GIF demonstrating the expected behavior where the spaceship moves left or right based on the X-axis tilt of the MPU6050 module:
 
-![Sample Output]([https://mega.nz/file/En9CkRBZ#ndRbG4FireiroVdayiUERC9xPy2OBd1GfwQiFSbLSDE](https://github.com/xmersad/Embedded-Linux-Practices/blob/main/Embedded-Linux-System-Integration/nInvaders-mpu6050/nInvaders.gif) )
+![Sample Output]
+(https://github.com/xmersad/Embedded-Linux-Practices/blob/main/Embedded-Linux-System-Integration/nInvaders-mpu6050/nInvaders.gif) 
 
 ## 5. Further Exploration
 
