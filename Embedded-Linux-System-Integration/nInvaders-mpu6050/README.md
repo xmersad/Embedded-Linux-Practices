@@ -108,7 +108,6 @@ Below is an example GIF demonstrating the expected behavior where the spaceship 
 To deepen your understanding, consider the following:
 
 - **Explore Different Input Devices**: Try integrating other sensors or input devices to control the `nInvaders` game.
-- **Optimize the Kernel**: Experiment with kernel optimization techniques to reduce the boot time and improve performance.
 - **Create a Custom UI**: Use the `ncurses` library to create a custom user interface for the game or for system monitoring.
 - **Experiment with Other Build Systems**: Try building the entire system using a different build system like Yocto or OpenEmbedded.
 
