@@ -96,6 +96,14 @@ By the end of this exercise, you should have:
 - The spaceship in the game should move left or right based on the tilt along the X-axis of the MPU6050.
 - A solid understanding of how to integrate user-space applications with kernel drivers and external hardware in an Embedded Linux system.
 
+### Example Output (GIF)
+
+Below is an example GIF demonstrating the expected behavior where the spaceship moves left or right based on the X-axis tilt of the MPU6050 module:
+
+![Sample Output](https://mega.nz/file/En9CkRBZ#ndRbG4FireiroVdayiUERC9xPy2OBd1GfwQiFSbLSDE)
+
+## 5. Further Exploration
+
 ## 5. Further Exploration
 
 To deepen your understanding, consider the following:
