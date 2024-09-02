@@ -102,7 +102,6 @@ Below is an example GIF demonstrating the expected behavior where the spaceship 
 
 ![Sample Output](https://github.com/xmersad/Embedded-Linux-Practices/blob/main/Embedded-Linux-System-Integration/nInvaders-mpu6050/nInvaders.gif) 
 
-## 5. Further Exploration
 
 ## 5. Further Exploration
 
