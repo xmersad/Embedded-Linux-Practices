@@ -1,0 +1,33 @@
+LIBS=-lncurses
+CC=aarch64-rpi4-linux-gnu-gcc
+CXX=aarch64-rpi4-linux-gnu-g++
+AR=aarch64-rpi4-linux-gnu-ar
+RANLIB=aarch64-rpi4-linux-gnu-ranlib
+CXXFLAGS="-std=c++14"
+
+
+################
+
+# SET your specfic sysroot and ncurses install path for CFLAGS and LDFLAGS
+
+################
+
+#CFLAGS=--sysroot=/home/mersad/x-tools/aarch64-rpi4-linux-gnu/aarch64-rpi4-linux-gnu/sysroot -I/home/mersad/Project/ninviders-mnl-01/rootfs/ncurses_install/usr/include
+
+#LDFLAGS=--sysroot=/home/mersad/x-tools/aarch64-rpi4-linux-gnu/aarch64-rpi4-linux-gnu/sysroot -L/home/mersad/Project/ninviders-mnl-01/rootfs/ncurses_install/usr/lib -lncurses
+
+
+
+
+CFILES=globals.c view.c aliens.c ufo.c player.c nInvaders.c
+HFILES=globals.h view.h aliens.h ufo.h player.h nInvaders.h
+OFILES=globals.o view.o aliens.o ufo.o player.o nInvaders.o
+all:		nInvaders
+
+nInvaders: 	$(OFILES) $(HFILES) 
+	$(CC) $(LDFLAGS) -o$@ $(OFILES) $(LIBS)
+
+.c.o:
+		$(CC) -c  -I. $(CFLAGS) $(OPTIONS) -fcommon -lstatic $<
+clean:
+		rm -f nInvaders $(OFILES)
