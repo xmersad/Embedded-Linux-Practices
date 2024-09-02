@@ -1,120 +1,61 @@
-# nInvaders-mpu6050 Project
+# nInvaders-mpu6050 Solution
 
-Welcome to the `nInvaders-mpu6050` project! This project will guide you through the process of building a minimal Embedded Linux system to run the classic `nInvaders` game, controlled by an MPU6050 accelerometer/gyroscope module. This exercise is designed to help you understand system integration in Embedded Linux by combining software compilation, device tree configuration, and driver modification.
+In this scenario, the source code of the `nInvaders` game has been modified to read data from the MPU6050 sensor. The game now interacts directly with the default kernel driver of the MPU6050, utilizing the driver's files to control the spaceship within the game.
 
-**Difficulty Level**: Intermediate
+## Steps
 
-## Exercise Structure
+### 1. Dependencies and Requirements
 
-Each exercise is designed to be practical and hands-on, with clear steps to follow. Exercises are structured as follows:
+Before proceeding, ensure all necessary dependencies and requirements are met.
 
-1. **Introduction**: A brief overview of the exercise topic and its significance in system integration.
-2. **Prerequisites**: A list of required tools, software, and knowledge needed before starting the exercise.
-3. **Steps**: Detailed instructions on how to complete the exercise, with explanations to ensure you understand what you're doing and why.
-4. **Expected Outcome**: A description of the expected result or output after completing the exercise.
-5. **Further Exploration**: Suggestions for additional tasks or modifications to deepen your understanding of the topic.
+### 2. Describe Device in Device Tree
 
-## 1. Introduction
+For this project, the MPU6050 should be described on the I2C-1 bus, which is connected to pin 3 (SDA) and pin 5 (SCL) with the address `I2C@7E804000`.
 
-In this exercise, you will:
+Here are the properties of the MPU6050 node in the Device Tree:
 
-- Compile the `ncurses` library.
-- Compile the `nInvaders` game using the `ncurses` library.
-- Build a minimal root filesystem, bootloader, and kernel image with the necessary drivers.
-- Configure the device tree to include the MPU6050 module.
-- Transfer the compiled software to your target board.
-- Explore multiple methods to enable control of the `nInvaders` game using the MPU6050 sensor.
+```dts
+&i2c1 {
+    mpu6050@68 {
+        compatible = "invensense,mpu6050";
+        reg = <0x68>;
+        interrupt-parent = <&gpio>;
+        interrupts = <17 IRQ_TYPE_EDGE_RISING>; 
+        orientation = <0>;
+    };
+};
+```
 
-### **Project Overview**
+**Note**: The interrupt property is not necessary for this project.
 
-The goal of this project is to play the `nInvaders` game on an embedded system, using an MPU6050 accelerometer/gyroscope module as the control interface. The player will control the spaceship in the game by tilting the MPU6050 module. Specifically, the spaceship should move left or right based on the tilt along the X-axis of the MPU6050.
+### 3. Compile Ncurses with Both Static and Shared Libraries
 
-This project serves as an excellent opportunity to practice and understand various aspects of Embedded Linux, from building and configuring the system to integrating external hardware.
+To compile the `ncurses` library with both static and shared libraries, use the provided bash script. Simply set your cross-compiler within the script. You can find the script here: [ncurses-compile.sh](https://github.com/xmersad/Embedded-Linux-Practices/blob/main/Embedded-Linux-System-Integration/nInvaders-mpu6050/solution_nInvaders-mpu6050/ncurses-compile.sh).
 
-## 2. Prerequisites
+### 4. Compile nInvaders Game
 
-Before starting this exercise, ensure you have the following:
+The `nInvaders` source code has been modified specifically for this project. After downloading the source, set your cross-compiler and the install path of `ncurses` in the Makefile. You can access the source and Makefile here: [nInvaders-Makefile](https://github.com/xmersad/Embedded-Linux-Practices/blob/main/Embedded-Linux-System-Integration/nInvaders-mpu6050/solution_nInvaders-mpu6050/nInvaders-Makefile).
 
-- **Tools & Software**:
-  - A cross-compilation toolchain appropriate for your target board.
-  - `ncurses` library source code.
-  - `nInvaders` game source code.
-  - MPU6050 driver source or compatible kernel.
-  - A minimal Linux distribution image builder (e.g., Buildroot, Yocto).
-  - A serial terminal program (e.g., `minicom`, `screen`) for communication with the target board.
+### 5. Compile the Kernel
 
-- **Hardware**:
-  - A target board (e.g., Raspberry Pi, BeagleBone).
-  - An MPU6050 module connected to your target board via I2C.
-  - Access to a UART interface for console output.
+Compile the Linux kernel with the necessary I2C-BCM2835 and MPU6050 modules, which are available in the mainline kernel.
 
-- **Knowledge**:
-  - Basic understanding of Embedded Linux systems.
-  - Familiarity with compiling software from source.
-  - Basic knowledge of device trees and Linux kernel configuration.
+### 6. Deploy to Root Filesystem
 
-## 3. Steps
+Move the kernel image, the `nInvaders` game binary, the MPU6050 module, the `libc`, and the compiled `ncurses` library to your root filesystem.
 
-### Step 1: Compile the `ncurses` Library
+### 7. Pre-Built Image
 
-1. Download the source code for the `ncurses` library.
-2. Configure the build for your target architecture using your cross-compilation toolchain.
-3. Compile and install the `ncurses` library.
+For convenience, a pre-built image for this scenario has been prepared. You can download it from this link: [Pre-Built Image](https://mega.nz/file/gisgVaZQ#X_2SQN06o4isfFLOdWuqbvDz3mzDQJuz12SB-Luk7zk).
 
-### Step 2: Compile the `nInvaders` Game
+## Testing
 
-1. Download the `nInvaders` source code.
-2. Configure the build to use the previously compiled `ncurses` library.
-3. Compile the game.
+After connecting the hardware and loading the MPU6050 module, verify that the sensor data is being correctly read. Check the corresponding device files in the `/sys/class/i2c-adapter/i2c-1/1-0068/` path. If the files are not present, ensure that the module is properly loaded and the device tree is correctly configured.
 
-### Step 3: Build a Minimal Root Filesystem and Kernel Image
+## Play
 
-1. Configure and compile the Linux kernel for your target board, ensuring the MPU6050 driver is included.
-2. Create a device tree blob (DTB) for your target board, including the MPU6050 module.
-3. Use a tool like Buildroot or Yocto to generate a minimal root filesystem that includes your compiled `ncurses` library and `nInvaders` game.
-4. Compile the bootloader (e.g., U-Boot) for your target board.
-5. Combine the bootloader, kernel, and root filesystem to create a bootable image for your target board.
+Once everything is set up, run the `nInvaders` game. The spaceship should move left or right based on the tilt along the X-axis of the MPU6050. You can play the game by simply tilting the module.
 
-### Step 4: Deploy the Image and Run the Game
+**Note**: If you come up with another method to control the game using the MPU6050, feel free to implement and explore it.
 
-1. Transfer the bootable image to your target board (e.g., via SD card, USB, or network).
-2. Boot your target board with the new image.
-3. Verify that the MPU6050 is detected by the kernel by checking the device tree and relevant device files (e.g., `/dev/i2c-*`).
-4. Run the `nInvaders` game on the target board.
-
-### Step 5: Enable Control of `nInvaders` Using MPU6050
-
-You have multiple options to enable control of `nInvaders` using the MPU6050:
-
-- **Option 1: Background Script**: Write a script that reads data from the MPU6050 and simulates keyboard inputs to control the game.
-- **Option 2: Modify Game Source**: Modify the `nInvaders` source code to directly read inputs from the MPU6050 and use it to control the game.
-- **Option 3: Modify MPU6050 Driver**: Modify the MPU6050 kernel driver to generate input events compatible with `nInvaders`.
-- **Custom Option**: If you think of another approach to control the game with the MPU6050, feel free to implement it. This project encourages creativity and exploring different solutions.
-
-### Step 6: Testing and Debugging
-
-- Test each method and verify that the spaceship in the `nInvaders` game moves left or right based on the tilt of the MPU6050 module along the X-axis.
-- Debug any issues by checking the kernel logs and ensuring that all software components are correctly integrated.
-
-## 4. Expected Outcome
-
-By the end of this exercise, you should have:
-
-- A bootable Embedded Linux system running on your target board.
-- The `nInvaders` game running on your target board with control input from the MPU6050 module.
-- The spaceship in the game should move left or right based on the tilt along the X-axis of the MPU6050.
-- A solid understanding of how to integrate user-space applications with kernel drivers and external hardware in an Embedded Linux system.
-
-## 5. Further Exploration
-
-To deepen your understanding, consider the following:
-
-- **Explore Different Input Devices**: Try integrating other sensors or input devices to control the `nInvaders` game.
-- **Optimize the Kernel**: Experiment with kernel optimization techniques to reduce the boot time and improve performance.
-- **Create a Custom UI**: Use the `ncurses` library to create a custom user interface for the game or for system monitoring.
-- **Experiment with Other Build Systems**: Try building the entire system using a different build system like Yocto or OpenEmbedded.
-
----
-
-This project provides a comprehensive hands-on experience in Embedded Linux system integration. Good luck, and enjoy the challenge!
-
+**Have fun!**
