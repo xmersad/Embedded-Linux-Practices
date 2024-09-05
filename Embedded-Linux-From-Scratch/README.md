@@ -18,17 +18,13 @@ This folder contains exercises and solutions designed to guide you through build
 
 ## Exercise Structure
 
-Each exercise is designed to be practical and hands-on, with clear steps to follow. Exercises are structured as follows:
+The exercises in this section are designed to be straightforward and concise, reflecting the simpler nature of the tasks. Each exercise includes two main sections:
 
-1. Introduction: A brief overview of the exercise topic and its relevance in building an embedded Linux system.
-  
-2. Prerequisites: A list of required tools, software, and knowledge needed before starting the exercise.
-  
-3. Steps: Detailed instructions on how to complete the exercise, with explanations at each step to ensure you understand what you're doing and why.
-  
-4. Expected Outcome: A description of the expected result or output after completing the exercise.
-  
-5. Further Exploration: Suggestions for additional tasks or modifications to deepen your understanding of the topic.
+1. **Explanations**: Brief descriptions that focus on the essential concepts and steps needed to complete the exercise. These explanations are generally shorter than those found in exercises from other parts of the repository, as the tasks are simpler and more focused.
+
+2. **Expected Output**: A clear description of the expected result or output after completing the exercise. 
+
+Depending on the complexity and requirements of each specific exercise, additional sections may be included, or some sections may be omitted. This flexibility allows for a more tailored approach to each task, ensuring that the most relevant information is provided.
 
 ## Contribution
 
