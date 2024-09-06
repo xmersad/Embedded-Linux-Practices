@@ -46,7 +46,7 @@ By completing this exercise, you will have:
 - An understanding of how to integrate custom commands into U-Boot.
 - The ability to initiate file transfers even when environment variables are not accessible.
 
-![Expected Output](path/to/your/image.gif)
+![Expected Output](https://github.com/xmersad/Embedded-Linux-Practices/blob/main/Embedded-Linux-From-Scratch/U-Boot_Getfile/Solution_U-Boot-Getfile/getfile_Prog.png)
 
 
 ---
