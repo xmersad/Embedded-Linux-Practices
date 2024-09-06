@@ -20,7 +20,7 @@ In this exercise, you’ll modify U-Boot to display a custom banner during the b
 
 By the end of this exercise, U-Boot should display your custom banner during the boot process, before proceeding with the rest of the system initialization.
 
-![Expected Output](path/to/your/banner_output.gif)
+![Expected Output](https://github.com/xmersad/Embedded-Linux-Practices/blob/main/Embedded-Linux-From-Scratch/U-Boot_Banner/Solution_U-Boot-Banner/Banner.jpeg)
 
 ---
 
