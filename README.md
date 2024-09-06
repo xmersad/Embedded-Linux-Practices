@@ -34,7 +34,7 @@ This section often includes complete project examples where you will integrate m
 
 - **Solutions**: A solution folder is provided with one approach to solving the exercises. The solutions are meant to guide you, but feel free to explore alternative methods. For larger projects, in addition to the documentation and detailed explanations, an ISO file is provided. This ISO file contains a pre-built version of the project, allowing you to easily test and run the project without going through the entire build process.
 
-This directory contains solutions for various exercises related to U-Boot and embedded systems development. All the solutions provided here have been tested on a **Raspberry Pi 4 (64-bit)** platform. However, this does not imply that the exercises are specific to this board only. The solutions should be adaptable to other platforms with minimal changes, depending on the specific hardware and environment.
+All the solutions provided here have been tested on a **Raspberry Pi 4 (64-bit)** platform. However, this does not imply that the exercises are specific to this board only. The solutions should be adaptable to other platforms with minimal changes, depending on the specific hardware and environment.
 
 
 ## Getting Started
