@@ -28,7 +28,17 @@ In this solution, a custom banner is displayed in U-Boot during the boot process
 
 3. **Passing the Banner Text**:
    - The banner text can be provided either by hardcoding it into the program or by using `Kconfig` for a more dynamic approach.
-   - A new configuration option, `BANNER_TEXT`, was added in the `Kconfig` file under the "Custom Configuration" section.
+   - A new configuration option, `BANNER_TEXT`, was added in the `Kconfig` file under the "Custom Configuration" section:
+
+     ```kconfig
+     menu "Custom Configuration"
+
+     config BANNER_TEXT
+         string "Banner Text"
+         default ""
+
+     endmenu
+     ```
 
 4. **Compiling the Code**:
    - The banner text is passed as a flag during the compilation of `board_f.c`. Here's the modification in the `Makefile`:
@@ -39,5 +49,3 @@ In this solution, a custom banner is displayed in U-Boot during the boot process
        ```
 
 By following these steps, U-Boot will display your custom banner during the boot process. The required program for banner generation is available in the current directory as well.
-
-
