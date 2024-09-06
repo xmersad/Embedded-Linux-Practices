@@ -10,7 +10,7 @@ In this exercise, you’ll modify U-Boot to display a custom banner during the b
    - Write a small program that converts your custom text into character art for display as a banner. You can implement this in C and later integrate it into U-Boot.
 
 2. **Include the Banner Code**:
-   - After writing your banner program, include its header and call the `show_banner()` function at an appropriate point in U-Boot’s boot sequence. 
+   - After writing your banner program, include its header and call your function at an appropriate point in U-Boot’s boot sequence. 
    - You can explore U-Boot's codebase to find the best place to insert the function or use your own approach to display the banner.
 
 3. **Optional**:
