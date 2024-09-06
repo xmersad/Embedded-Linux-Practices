@@ -40,8 +40,8 @@ All the solutions provided here have been tested on a **Raspberry Pi 4 (64-bit)*
 
 | System Integration                             | From Scratch                                |
 |------------------------------------------------|---------------------------------------------|
-| [nInvaders-mpu6050](./path/to/exercise3) | [U-Boot_Getfile](./path/to/exercise2)      |
-|                                          | [U-Boot_Banner](./path/to/exercise4)       |
+| [nInvaders-mpu6050](https://github.com/xmersad/Embedded-Linux-Practices/tree/main/Embedded-Linux-System-Integration/nInvaders-mpu6050) | [U-Boot_Getfile](https://github.com/xmersad/Embedded-Linux-Practices/tree/main/Embedded-Linux-From-Scratch/U-Boot_Getfile)      |
+|                                          | [U-Boot_Banner](https://github.com/xmersad/Embedded-Linux-Practices/tree/main/Embedded-Linux-From-Scratch/U-Boot_Banner)       |
 |                                          |
 
 ## Getting Started
