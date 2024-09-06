@@ -1,0 +1,295 @@
+//#include <stdio.h>
+//#include <string.h>
+
+#define STR_HELPER(x) #x
+#define STR(x) STR_HELPER(x)
+
+#define HEIGHT 6
+#define WIDTH 5
+
+char A[HEIGHT][WIDTH + 1] = {
+    "  *  ",
+    " * * ",
+    "*   *",
+    "*****",
+    "*   *",
+    "*   *"
+};
+
+char B[HEIGHT][WIDTH + 1] = {
+    "**** ",
+    "*   *",
+    "**** ",
+    "*   *",
+    "*   *",
+    "**** "
+};
+
+char C[HEIGHT][WIDTH + 1] = {
+    " ****",
+    "*    ",
+    "*    ",
+    "*    ",
+    "*    ",
+    " ****"
+};
+
+char D[HEIGHT][WIDTH + 1] = {
+    "**** ",
+    "*   *",
+    "*   *",
+    "*   *",
+    "*   *",
+    "**** "
+};
+
+char E[HEIGHT][WIDTH + 1] = {
+    "*****",
+    "*    ",
+    "*****",
+    "*    ",
+    "*    ",
+    "*****"
+};
+
+char F[HEIGHT][WIDTH + 1] = {
+    "*****",
+    "*    ",
+    "*****",
+    "*    ",
+    "*    ",
+    "*    "
+};
+
+char G[HEIGHT][WIDTH + 1] = {
+    " ****",
+    "*    ",
+    "*  **",
+    "*   *",
+    "*   *",
+    " ****"
+};
+
+char H[HEIGHT][WIDTH + 1] = {
+    "*   *",
+    "*   *",
+    "*****",
+    "*   *",
+    "*   *",
+    "*   *"
+};
+
+char I[HEIGHT][WIDTH + 1] = {
+    "*****",
+    "  *  ",
+    "  *  ",
+    "  *  ",
+    "  *  ",
+    "*****"
+};
+
+char J[HEIGHT][WIDTH + 1] = {
+    "*****",
+    "   * ",
+    "   * ",
+    "   * ",
+    "*  * ",
+    " **  "
+};
+
+char K[HEIGHT][WIDTH + 1] = {
+    "*   *",
+    "*  * ",
+    "***  ",
+    "*  * ",
+    "*   *",
+    "*   *"
+};
+
+char L[HEIGHT][WIDTH + 1] = {
+    "*    ",
+    "*    ",
+    "*    ",
+    "*    ",
+    "*    ",
+    "*****"
+};
+
+char M[HEIGHT][WIDTH + 1] = {
+    "*   *",
+    "** **",
+    "* * *",
+    "*   *",
+    "*   *",
+    "*   *"
+};
+
+char N[HEIGHT][WIDTH + 1] = {
+    "*   *",
+    "**  *",
+    "* * *",
+    "*  **",
+    "*   *",
+    "*   *"
+};
+
+char O[HEIGHT][WIDTH + 1] = {
+    " *** ",
+    "*   *",
+    "*   *",
+    "*   *",
+    "*   *",
+    " *** "
+};
+
+char P[HEIGHT][WIDTH + 1] = {
+    "**** ",
+    "*   *",
+    "*   *",
+    "**** ",
+    "*    ",
+    "*    "
+};
+
+char Q[HEIGHT][WIDTH + 1] = {
+    " *** ",
+    "*   *",
+    "*   *",
+    "* * *",
+    "*  * ",
+    " ** *"
+};
+
+char R[HEIGHT][WIDTH + 1] = {
+    "**** ",
+    "*   *",
+    "*   *",
+    "**** ",
+    "*  * ",
+    "*   *"
+};
+
+char S[HEIGHT][WIDTH + 1] = {
+    " ****",
+    "*    ",
+    " *** ",
+    "    *",
+    "*   *",
+    " *** "
+};
+
+char T[HEIGHT][WIDTH + 1] = {
+    "*****",
+    "  *  ",
+    "  *  ",
+    "  *  ",
+    "  *  ",
+    "  *  "
+};
+
+char U[HEIGHT][WIDTH + 1] = {
+    "*   *",
+    "*   *",
+    "*   *",
+    "*   *",
+    "*   *",
+    " *** "
+};
+
+char V[HEIGHT][WIDTH + 1] = {
+    "*   *",
+    "*   *",
+    "*   *",
+    "*   *",
+    " * * ",
+    "  *  "
+};
+
+char W[HEIGHT][WIDTH + 1] = {
+    "*   *",
+    "*   *",
+    "*   *",
+    "* * *",
+    "** **",
+    "*   *"
+};
+
+char X[HEIGHT][WIDTH + 1] = {
+    "*   *",
+    " * * ",
+    "  *  ",
+    " * * ",
+    "*   *",
+    "*   *"
+};
+
+char Y[HEIGHT][WIDTH + 1] = {
+    "*   *",
+    " * * ",
+    "  *  ",
+    "  *  ",
+    "  *  ",
+    "  *  "
+};
+
+char Z[HEIGHT][WIDTH + 1] = {
+    "*****",
+    "   * ",
+    "  *  ",
+    " *   ",
+    "*    ",
+    "*****"
+};
+
+void printChar(char c, int row) {
+    switch(c) {
+        case 'A': case 'a': printf("%s", A[row]); break;
+        case 'B': case 'b': printf("%s", B[row]); break;
+        case 'C': case 'c': printf("%s", C[row]); break;
+        case 'D': case 'd': printf("%s", D[row]); break;
+        case 'E': case 'e': printf("%s", E[row]); break;
+        case 'F': case 'f': printf("%s", F[row]); break;
+        case 'G': case 'g': printf("%s", G[row]); break;
+        case 'H': case 'h': printf("%s", H[row]); break;
+        case 'I': case 'i': printf("%s", I[row]); break;
+        case 'J': case 'j': printf("%s", J[row]); break;
+        case 'K': case 'k': printf("%s", K[row]); break;
+        case 'L': case 'l': printf("%s", L[row]); break;
+        case 'M': case 'm': printf("%s", M[row]); break;
+        case 'N': case 'n': printf("%s", N[row]); break;
+        case 'O': case 'o': printf("%s", O[row]); break;
+        case 'P': case 'p': printf("%s", P[row]); break;
+        case 'Q': case 'q': printf("%s", Q[row]); break;
+        case 'R': case 'r': printf("%s", R[row]); break;
+        case 'S': case 's': printf("%s", S[row]); break;
+        case 'T': case 't': printf("%s", T[row]); break;
+        case 'U': case 'u': printf("%s", U[row]); break;
+        case 'V': case 'v': printf("%s", V[row]); break;
+        case 'W': case 'w': printf("%s", W[row]); break;
+        case 'X': case 'x': printf("%s", X[row]); break;
+        case 'Y': case 'y': printf("%s", Y[row]); break;
+        case 'Z': case 'z': printf("%s", Z[row]); break;
+        default: printf("     "); break;  
+    }
+}
+
+void printBanner(char* str) {
+    int len = strlen(str);
+    for(int row = 0; row < HEIGHT; row++) {
+        for(int i = 0; i < len; i++) {
+            printChar(str[i], row);
+            printf("  ");  
+        }
+        printf("\n");
+    }
+}
+
+
+void show_banner() {
+#ifdef BANNERTEXT
+     char text[255]=STR(BANNERTEXT);
+     if (strlen(text) > 0) {
+            printBanner(text);
+        }
+#endif
+}
