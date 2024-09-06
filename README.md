@@ -36,6 +36,13 @@ This section often includes complete project examples where you will integrate m
 
 All the solutions provided here have been tested on a **Raspberry Pi 4 (64-bit)** platform. However, this does not imply that the exercises are specific to this board only. The solutions should be adaptable to other platforms with minimal changes, depending on the specific hardware and environment.
 
+##List Of Practices 
+
+| System Integration                             | From Scratch                                |
+|------------------------------------------------|---------------------------------------------|
+| [File Download via TFTP in U-Boot](./path/to/exercise1) | [Exercise 1 Name](./path/to/exercise2)      |
+| [nInvaders-mpu6050](./path/to/exercise3)       | [Exercise 2 Name](./path/to/exercise4)      |
+| [Display Banner in U-Boot](./path/to/exercise5)|                                             |
 
 ## Getting Started
 
