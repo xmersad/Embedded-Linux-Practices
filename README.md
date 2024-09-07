@@ -42,7 +42,7 @@ All the solutions provided here have been tested on a **Raspberry Pi 4 (64-bit)*
 |------------------------------------------------|---------------------------------------------|
 | [nInvaders-mpu6050](https://github.com/xmersad/Embedded-Linux-Practices/tree/main/Embedded-Linux-System-Integration/nInvaders-mpu6050) | [U-Boot_Getfile](https://github.com/xmersad/Embedded-Linux-Practices/tree/main/Embedded-Linux-From-Scratch/U-Boot_Getfile)      |
 |                                          | [U-Boot_Banner](https://github.com/xmersad/Embedded-Linux-Practices/tree/main/Embedded-Linux-From-Scratch/U-Boot_Banner)       |
-|                                          |
+|                                          | [U-Boot_DynamicMMC](https://github.com/xmersad/Embedded-Linux-Practices/tree/main/Embedded-Linux-From-Scratch/U-Boot_DynamicMMC) |
 
 ## Getting Started
 
