@@ -17,7 +17,7 @@ How can you configure U-Boot so that it dynamically searches for the correct MMC
 - U-Boot should be able to automatically detect and use the correct MMC device.
 - The MMC-related commands (like `sysboot`, file operations) should succeed without manual intervention.
 
-![Expected Output](https://github.com/xmersad/Embedded-Linux-Practices/blob/main/Embedded-Linux-From-Scratch/U-Boot_Banner/Solution_U-Boot-Banner/Banner.jpeg)
+![Expected Output](https://github.com/xmersad/Embedded-Linux-Practices/blob/main/Embedded-Linux-From-Scratch/U-Boot_DynamicMMC/solution_U-Boot-MMC/DynamicMMC.jpg)
 
 
 #### Additional Information:
