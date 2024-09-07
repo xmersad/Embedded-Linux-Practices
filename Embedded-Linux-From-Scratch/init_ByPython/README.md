@@ -20,5 +20,5 @@ Make sure to create the `dev` directory within your Rootfs because Python requir
 
 Upon successful execution, the system should be able to utilize the Python init script, allowing for the initialization of processes and other essential tasks within the Linux environment.
 
-![Expected Output](path/to/your/image.png)
+![Expected Output](https://github.com/xmersad/Embedded-Linux-Practices/blob/main/Embedded-Linux-From-Scratch/init_ByPython/solution_Python-init/init.jpg)
 
