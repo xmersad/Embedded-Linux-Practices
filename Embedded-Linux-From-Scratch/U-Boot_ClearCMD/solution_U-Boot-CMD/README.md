@@ -30,23 +30,22 @@ In this solution, we will add a `clear` command to U-Boot, which is not availabl
        "Clear screen",
        ""
    );
-```
-
+``
 
 2. **Modify the Makefile**: 
    In the `cmd` directory, the following line was added to the Makefile to include the new command:
 
-   ```makefile
+   ``` makefile
    obj-$(CONFIG_CMD_CLEAR) += cmd_clear.o
 
-```
+``
 
 3. **Update the Board Configuration**:  
    The Raspberry Pi board configuration file located at `include/configs/rpi.h` was modified to enable the `clear` command by adding the following line:
 
    ```c
    #define CONFIG_CMD_CLEAR
-```
+``
 
 
 4. **Compile U-Boot**:  
