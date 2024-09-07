@@ -43,7 +43,8 @@ All the solutions provided here have been tested on a **Raspberry Pi 4 (64-bit)*
 | [nInvaders-mpu6050](https://github.com/xmersad/Embedded-Linux-Practices/tree/main/Embedded-Linux-System-Integration/nInvaders-mpu6050) | [U-Boot_Getfile](https://github.com/xmersad/Embedded-Linux-Practices/tree/main/Embedded-Linux-From-Scratch/U-Boot_Getfile)      |
 |                                          | [U-Boot_Banner](https://github.com/xmersad/Embedded-Linux-Practices/tree/main/Embedded-Linux-From-Scratch/U-Boot_Banner)       |
 |                                          | [U-Boot_DynamicMMC](https://github.com/xmersad/Embedded-Linux-Practices/tree/main/Embedded-Linux-From-Scratch/U-Boot_DynamicMMC) |
-|                                          | [U-Boot_ClearCMD](https://github.com/xmersad/Embedded-Linux-Practices/tree/main/Embedded-Linux-From-Scratch/U-Boot_ClearCMD)
+|                                          | [U-Boot_ClearCMD](https://github.com/xmersad/Embedded-Linux-Practices/tree/main/Embedded-Linux-From-Scratch/U-Boot_ClearCMD)    |
+|                                          | [init_ByPython](https://github.com/xmersad/Embedded-Linux-Practices/tree/main/Embedded-Linux-From-Scratch/init_ByPython)
 
 ## Getting Started
 
