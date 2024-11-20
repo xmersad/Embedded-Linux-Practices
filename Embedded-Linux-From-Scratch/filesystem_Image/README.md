@@ -88,3 +88,7 @@ After completing the steps:
 4. BusyBox Web Server:
    - Ensure that BusyBox is configured with HTTP server support.
    - Verify that the scripts correctly mount the data partition to /www and start the HTTP server.
+
+## Further Practice
+
+To gain more experience with filesystem management and disk image creation, you can combine all the filesystems (boot, root, and data partitions) into a single disk image. Instead of writing each filesystem to separate partitions, you will create a full disk image and then write it directly to the target device, such as /dev/mmcblk0.
