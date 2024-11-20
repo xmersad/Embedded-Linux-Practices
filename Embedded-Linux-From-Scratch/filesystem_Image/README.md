@@ -2,7 +2,6 @@
 
 This README outlines the process for creating file system images, partitioning an MMC, and setting up a web server using BusyBox. The steps below will help you build a multi-partition MMC containing a bootloader, root filesystem, and data filesystem, with a functional web server serving an index.html file.
 
----
 
 ## Overview
 
@@ -13,7 +12,6 @@ In this task, you will:
 2. Partition an MMC and load these images onto their respective partitions.
 3. Configure a web server using BusyBox, ensuring it serves an index.html file from the data partition.
 
----
 
 ## Plan
 
@@ -34,7 +32,6 @@ In this task, you will:
    - Size: Remaining MMC space
    - Content: index.html file, mounted at /www.
 
----
 
 ## Steps
 
@@ -66,7 +63,6 @@ Ensure the kernel supports the required file systems. Enable the following optio
 - Boot the target device.
 - Use curl from the host system to access the web server
 
----
 
 ## Expected Output
 
@@ -75,7 +71,6 @@ After completing the steps:
 - The web server should serve the index.html file.
 - Running the curl command on the host system should display the html file
 
----
 
 ## Notes
 
@@ -93,5 +88,3 @@ After completing the steps:
 4. BusyBox Web Server:
    - Ensure that BusyBox is configured with HTTP server support.
    - Verify that the scripts correctly mount the data partition to /www and start the HTTP server.
-
----
