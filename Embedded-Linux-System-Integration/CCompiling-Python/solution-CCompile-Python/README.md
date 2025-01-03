@@ -25,7 +25,7 @@ make install
 ```
 Reason: Python uses libffi for foreign function interface support, allowing Python to call C functions.
 
----
+
 
 ### 2. Cross-Compiling Python
 
@@ -44,7 +44,7 @@ I then built and installed Python:
 make  
 make install  
 ```
----
+
 
 ### 3. Issue with pip Installation
 During the Python installation process, an error occurred when attempting to upgrade pip using the embedded ensurepip module. The error was caused by an existing pip installation on the host system (Debian), managed by the apt package manager. The issue was due to a missing RECORD file, preventing the uninstallation of the system's pip.
@@ -56,7 +56,7 @@ During the Python installation process, an error occurred when attempting to upg
 make install  
 /path/to/python3.12 -m ensurepip --no-default-pip  
 ```
----
+
 
 ### 4. Final Setup
 
@@ -64,13 +64,13 @@ After compilation, all libraries and binaries were placed in a temporary root fi
 
 The resulting Python installation was verified to work correctly with the necessary modules and dependencies.
 
----
+
 
 ## Outcome
 
 The cross-compilation process was completed successfully. Python 3.12.8 was installed in the target rootfs, along with its dependencies (zlib and libffi), and is fully functional for ARM64 architecture.
 
----
+
 
 ## Additional Resource
 
