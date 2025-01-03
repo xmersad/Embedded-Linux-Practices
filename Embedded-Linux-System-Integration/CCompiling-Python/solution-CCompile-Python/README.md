@@ -30,14 +30,14 @@ Reason: Python uses libffi for foreign function interface support, allowing Pyth
 ### 2. Cross-Compiling Python
 
 I configured the Python source code for the ARM64 target using the following command:
-
+```
 ./configure \
   --host=aarch64-linux-gnu \
   --build=x86_64-linux-gnu \
   --prefix=/path/to/temp/rootfs/usr \
   CFLAGS="-I/path/to/temp/rootfs/usr/include" \
   LDFLAGS="-L/path/to/temp/rootfs/usr/lib"
-
+```
 I then built and installed Python:
 
 ```
@@ -52,10 +52,10 @@ During the Python installation process, an error occurred when attempting to upg
 #### Solution:
 1. Added CFLAGS and LDFLAGS to explicitly point to the compiled libraries in the temporary rootfs.
 2. Installed Python with the --no-ensurepip option to skip the pip installation step:
-
+```
 make install  
 /path/to/python3.12 -m ensurepip --no-default-pip  
-
+```
 ---
 
 ### 4. Final Setup
@@ -69,6 +69,7 @@ The resulting Python installation was verified to work correctly with the necess
 ## Outcome
 
 The cross-compilation process was completed successfully. Python 3.12.8 was installed in the target rootfs, along with its dependencies (zlib and libffi), and is fully functional for ARM64 architecture.
+
 [Download Image Link](https://mega.nz/file/Jy8WDJDQ#6PaSjU4r1qIyTmmYovXNCBqRpwjfG9cNF7jx9Y_Bnvc)
 ---
 
