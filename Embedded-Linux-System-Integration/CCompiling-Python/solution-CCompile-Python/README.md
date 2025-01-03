@@ -70,7 +70,6 @@ The resulting Python installation was verified to work correctly with the necess
 
 The cross-compilation process was completed successfully. Python 3.12.8 was installed in the target rootfs, along with its dependencies (zlib and libffi), and is fully functional for ARM64 architecture.
 
-[Download Image Link](https://mega.nz/file/Jy8WDJDQ#6PaSjU4r1qIyTmmYovXNCBqRpwjfG9cNF7jx9Y_Bnvc)
 ---
 
 ## Additional Resource
