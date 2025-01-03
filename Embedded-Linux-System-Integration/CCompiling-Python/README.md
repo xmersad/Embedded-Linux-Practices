@@ -2,7 +2,7 @@
 
 Python is a widely used interpreted programming language, but in this exercise, we focus on compiling the **core Python interpreter** for an embedded target. This involves cross-compiling Python and its required dependencies for a specific board.
 
----
+
 
 ## Task Description
 
