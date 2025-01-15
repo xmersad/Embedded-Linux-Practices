@@ -1,4 +1,4 @@
-# Exercise: Building ALSA From Scratch
+# Building ALSA From Scratch
 
 This exercise involves building ALSA (Advanced Linux Sound Architecture) from scratch, including kernel drivers, libraries, and utilities, to output sound on a target device (e.g., Raspberry Pi). The goal is to fully understand the kernel space and user space components of ALSA while overcoming challenges in cross-compiling and configuration.
 
