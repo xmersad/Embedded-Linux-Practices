@@ -2,7 +2,6 @@
 
 This exercise involves building ALSA (Advanced Linux Sound Architecture) from scratch, including kernel drivers, libraries, and utilities, to output sound on a target device (e.g., Raspberry Pi). The goal is to fully understand the kernel space and user space components of ALSA while overcoming challenges in cross-compiling and configuration.
 
----
 
 ## Key Steps
 
@@ -23,7 +22,7 @@ This exercise involves building ALSA (Advanced Linux Sound Architecture) from sc
    - Use tools like `speaker-test` to output a `.wav` file and verify the sound functionality.
    - Debug any issues related to driver parameters, library paths, or application usage.
 
----
+
 
 ## Challenges
 
@@ -32,7 +31,7 @@ This exercise involves building ALSA (Advanced Linux Sound Architecture) from sc
 - Configuring the device tree to correctly initialize ALSA hardware components.
 - Troubleshooting dynamic linking issues during the ALSA utilities build process.
 
----
+
 
 ## Further Practice
 
