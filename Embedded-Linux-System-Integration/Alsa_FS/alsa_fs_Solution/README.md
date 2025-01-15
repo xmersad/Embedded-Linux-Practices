@@ -108,7 +108,7 @@ This guide outlines the steps required to build ALSA from scratch for the Raspbe
 
 - **Pre-built Disk Image**:  
   A pre-built ext4 disk image containing the kernel, ALSA libraries, and utilities has been provided. You can write this image to an SD card using `dd` or similar tools for immediate use.
-
+! [IMAGE_LINK](https://mega.nz/file/c2EGkDLZ#PIiFktjpGMidUaxGXixzDTPHz3yc4f-m22xkTnAn3ZM) 
 
 ## Output Example
 
