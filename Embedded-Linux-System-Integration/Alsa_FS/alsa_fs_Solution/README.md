@@ -2,7 +2,6 @@
 
 This guide outlines the steps required to build ALSA from scratch for the Raspberry Pi 4, covering kernel configuration, library compilation, utility setup, and testing the sound output.
 
----
 
 ## Step 1: Kernel Configuration
 
@@ -34,7 +33,6 @@ This guide outlines the steps required to build ALSA from scratch for the Raspbe
 3. **Device Tree**:  
    For the Raspberry Pi 4, the default device tree usually supports ALSA out of the box. No additional device tree changes are required.
 
----
 
 ## Step 2: ALSA Libraries (alsa-lib)
 
@@ -61,7 +59,6 @@ This guide outlines the steps required to build ALSA from scratch for the Raspbe
 
    Ensure the compiled libraries are placed in the target root filesystem.
 
----
 
 ## Step 3: ALSA Utilities (alsa-utils)
 
@@ -88,7 +85,6 @@ This guide outlines the steps required to build ALSA from scratch for the Raspbe
 
    Ensure the utilities (e.g., `speaker-test`) are placed in the target root filesystem.
 
----
 
 ## Step 4: Deployment and Testing
 
@@ -105,7 +101,6 @@ This guide outlines the steps required to build ALSA from scratch for the Raspbe
 
    Verify that audio is played through the configured output device (e.g., HDMI or headphone jack).
 
----
 
 ## Additional Information
 
@@ -114,13 +109,11 @@ This guide outlines the steps required to build ALSA from scratch for the Raspbe
 - **Pre-built Disk Image**:  
   A pre-built ext4 disk image containing the kernel, ALSA libraries, and utilities has been provided. You can write this image to an SD card using `dd` or similar tools for immediate use.
 
----
 
 ## Output Example
 
 *Image Placeholder: Add an image of ALSA output on the Raspberry Pi 4.*
 
----
 
 ## Contact
 
