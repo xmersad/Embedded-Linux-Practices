@@ -112,8 +112,7 @@ This guide outlines the steps required to build ALSA from scratch for the Raspbe
 
 ## Output Example
 
-*Image Placeholder: Add an image of ALSA output on the Raspberry Pi 4.*
-
+![Sample Output](https://github.com/xmersad/Embedded-Linux-Practices/blob/main/Embedded-Linux-System-Integration/Alsa_FS/alsa_fs_Solution/Sampleimg.png) 
 
 ## Contact
 
